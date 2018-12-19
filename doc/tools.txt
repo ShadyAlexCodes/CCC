@@ -7,7 +7,7 @@ Settings:
   [✔️] Source Map
   [✔️] Line Comments
   [__] Debug Info
-  [✔️] Unix New Lines
+  [__] Unix New Lines
   [✔️] Autoprefix
 
   Output Style
