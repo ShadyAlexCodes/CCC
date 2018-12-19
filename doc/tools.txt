@@ -9,3 +9,6 @@ Settings:
   [__] Debug Info
   [✔️] Unix New Lines
   [✔️] Autoprefix
+
+  Output Style
+    Extended
