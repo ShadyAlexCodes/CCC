@@ -1,0 +1,11 @@
+http://koala-app.com/
+
+Settings:
+  [✔️] Auto Compile
+
+  [__] Compass Mode
+  [✔️] Source Map
+  [✔️] Line Comments
+  [__] Debug Info
+  [✔️] Unix New Lines
+  [✔️] Autoprefix
