@@ -4,11 +4,13 @@ Settings:
   [✔️] Auto Compile
 
   [__] Compass Mode
-  [✔️] Source Map
-  [✔️] Line Comments
+  [__] Source Map
+  [__] Line Comments
   [__] Debug Info
   [__] Unix New Lines
-  [✔️] Autoprefix
+  [__] Autoprefix
 
   Output Style
-    Extended
+    Compressed
+
+  Note: Use whatever you like for the dev process but use those settings for pushing to github/CDN
