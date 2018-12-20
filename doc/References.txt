@@ -1,0 +1,2 @@
+https://www.jsdelivr.com/?docs=gh
+https://cdn.jsdelivr.net/gh/mm909/CCC/
