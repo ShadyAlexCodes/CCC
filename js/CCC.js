@@ -81,7 +81,7 @@ function buildTOCSubHeaders() {
 function populateTOC() {
   $("#tocHook").addClass("toc")
   var tocTitle = $("#tocHook").text()
-  $("#tocHook").text("")
+  $("#tocHook").html("")
   $("#tocHook").append($(
     `<a href="#top">
           <h3 class="navTitle">` + tocTitle + `</h3>
@@ -92,7 +92,7 @@ function populateTOC() {
   for (var i = 0; i < sections.length; i++) {
     let name = sections[i].id;
     let text = ($(sections[i]).find("a")[0].innerText);
-    $temp = $("<li class='navListItem'><a class='navItem' href='#" + name + "'><span class='code prettifyResult'>" + text + "</span></a></li>")
+    $temp = $("<li class='navListItem'><a class='navSection navItem' href='#" + name + "'>" + text + "</a></li>")
     $("#tocDynamic").append($temp);
     $temp = $("<section id='TOC" + name + "'>")
     $("#tocDynamic").append($temp);

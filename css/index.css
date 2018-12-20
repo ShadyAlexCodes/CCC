@@ -72,17 +72,28 @@ h6 {
   /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
+/* line 1, ../sass/components/page.sass */
+.contentWrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: calc(100vh - 50px);
+  padding-top: 50px;
+}
+
 /* line 1, ../sass/components/navbar.sass */
 .navFixed {
   background-color: #212121;
-  color: #fff;
   padding: 8px 0;
   position: fixed;
   width: 100%;
   z-index: 9999;
 }
 
-/* line 10, ../sass/components/navbar.sass */
+/* line 9, ../sass/components/navbar.sass */
 .navWrapper {
   margin: 0 auto;
   padding: 0 20px;
@@ -168,7 +179,7 @@ h6 {
 
 /* line 2, ../sass/components/text.sass */
 .code {
-  background-color: rgba(27, 31, 35, 0.05);
+  background-color: rgba(27, 31, 35, 0.1);
 }
 
 /* line 6, ../sass/components/text.sass */
@@ -178,12 +189,12 @@ h6 {
 
 /* line 10, ../sass/components/text.sass */
 .codeG {
-  background-color: rgba(0, 250, 0, 0.1);
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
 /* line 14, ../sass/components/text.sass */
 .codeB {
-  background-color: rgba(0, 0, 250, 0.1);
+  background-color: rgba(0, 0, 255, 0.1);
 }
 
 /* line 18, ../sass/components/text.sass */
@@ -193,63 +204,57 @@ h6 {
 
 /* line 22, ../sass/components/text.sass */
 .textG {
-  background-color: rgba(0, 250, 0, 0.1);
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
 /* line 26, ../sass/components/text.sass */
 .textB {
-  background-color: rgba(0, 0, 250, 0.1);
+  background-color: rgba(0, 0, 255, 0.1);
 }
 
-/* line 31, ../sass/components/text.sass */
+/* line 30, ../sass/components/text.sass */
 .prettifyHTML {
   color: #ed5565;
   background-color: #2f3640;
 }
 
-/* line 35, ../sass/components/text.sass */
+/* line 34, ../sass/components/text.sass */
 .prettifyCOM {
   color: #90EE90;
   background-color: #2f3640;
 }
 
-/* line 39, ../sass/components/text.sass */
+/* line 38, ../sass/components/text.sass */
 .prettifySQL {
   color: #f0ff76;
   background-color: #2f3640;
 }
 
-/* line 43, ../sass/components/text.sass */
+/* line 42, ../sass/components/text.sass */
 .prettifyCSS {
   color: #90EE90;
   background-color: #2f3640;
 }
 
-/* line 47, ../sass/components/text.sass */
+/* line 46, ../sass/components/text.sass */
 .prettifyJS {
   color: #4fc1e9;
   background-color: #2f3640;
 }
 
-/* line 51, ../sass/components/text.sass */
+/* line 50, ../sass/components/text.sass */
 .prettifyPHP {
   color: #ac92ec;
   background-color: #2f3640;
 }
 
-/* line 55, ../sass/components/text.sass */
+/* line 54, ../sass/components/text.sass */
 .prettifyResult {
-  background-color: #2f3640;
   color: #e6e9ed;
-}
-
-/* line 59, ../sass/components/text.sass */
-.prettifyPurple {
   background-color: #2f3640;
-  color: #ac92ec;
 }
 
-/* line 63, ../sass/components/text.sass */
+/* line 58, ../sass/components/text.sass */
 .face {
   color: #f0ff76;
   background-color: #2f3640;
@@ -258,6 +263,211 @@ h6 {
   font-size: 85%;
   margin: 0;
   padding: 3.2px 6.4px;
+}
+
+/* line 1, ../sass/components/toc.sass */
+.toc {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 240px;
+          flex: 0 0 240px;
+  height: calc(100vh);
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: auto;
+  top: 50px;
+  padding: 40px 0;
+}
+/* line 9, ../sass/components/toc.sass */
+.toc .navSection {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* line 14, ../sass/components/toc.sass */
+.toc a {
+  border: none;
+  color: #717171;
+  display: block;
+  font-size: 14px;
+  padding: 4px 0;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+/* line 23, ../sass/components/toc.sass */
+.toc a:hover {
+  color: #fed03d;
+}
+/* line 26, ../sass/components/toc.sass */
+.toc ul {
+  padding: 0 8px;
+}
+/* line 29, ../sass/components/toc.sass */
+.toc ul li {
+  list-style-type: none;
+}
+
+/* line 1, ../sass/components/footer.sass */
+.nav-footer {
+  background: #212121;
+  padding-bottom: 4em;
+}
+
+/* line 1, ../sass/components/codeBox.sass */
+.codeTab {
+  font-size: 20px;
+}
+
+/* line 4, ../sass/components/codeBox.sass */
+.codeBox {
+  margin: auto;
+  width: 100%;
+  font-size: 115%;
+  max-width: 900px;
+}
+
+/* line 10, ../sass/components/codeBox.sass */
+.tab-content {
+  max-width: 900px;
+}
+
+/* line 13, ../sass/components/codeBox.sass */
+.resultBox {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+/*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */
+/* line 2, ../sass/components/prettyprint.sass */
+.prettyprint {
+  background: #2f3640;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 0 !important;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+/* line 8, ../sass/components/prettyprint.sass */
+ol.linenums {
+  margin-top: 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+  color: #656d78;
+}
+
+/* line 14, ../sass/components/prettyprint.sass */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  background-color: #2f3640;
+  list-style-type: decimal;
+}
+
+/* line 27, ../sass/components/prettyprint.sass */
+.pln {
+  color: #e6e9ed;
+}
+
+/* string content */
+/* line 31, ../sass/components/prettyprint.sass */
+.str {
+  color: #ffce54;
+}
+
+/* keyword */
+/* line 35, ../sass/components/prettyprint.sass */
+.kwd {
+  color: #4fc1e9;
+}
+
+/* comment */
+/* line 39, ../sass/components/prettyprint.sass */
+.com {
+  color: #90EE90;
+}
+
+/* type name */
+/* line 43, ../sass/components/prettyprint.sass */
+.typ {
+  color: #4fc1e9;
+}
+
+/* literal value */
+/* line 47, ../sass/components/prettyprint.sass */
+.lit {
+  color: #ac92ec;
+}
+
+/* punctuation */
+/* line 51, ../sass/components/prettyprint.sass */
+.pun {
+  /* color: #e6e9ed; */
+  color: #f2f25c;
+}
+
+/* lisp open bracket */
+/* line 56, ../sass/components/prettyprint.sass */
+.opn {
+  color: #e6e9ed;
+}
+
+/* lisp close bracket */
+/* line 60, ../sass/components/prettyprint.sass */
+.clo {
+  color: #e6e9ed;
+}
+
+/* markup tag name */
+/* line 64, ../sass/components/prettyprint.sass */
+.tag {
+  color: #ed5565;
+}
+
+/* markup attribute name */
+/* line 68, ../sass/components/prettyprint.sass */
+.atn {
+  color: #a0d468;
+}
+
+/* markup attribute value */
+/* line 72, ../sass/components/prettyprint.sass */
+.atv {
+  color: #ffce54;
+}
+
+/* declaration */
+/* line 76, ../sass/components/prettyprint.sass */
+.dec {
+  color: #ac92ec;
+}
+
+/* variable name */
+/* line 80, ../sass/components/prettyprint.sass */
+.var {
+  color: #e6e9ed;
+}
+
+/* function name */
+/* line 84, ../sass/components/prettyprint.sass */
+.fun {
+  color: #e6e9ed;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 2, ../sass/components/media1200.sass */
+  .toc {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

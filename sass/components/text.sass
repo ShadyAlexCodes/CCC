@@ -1,67 +1,62 @@
 
 .code
-  background-color: rgba(27, 31, 35, .05)
+  background-color: $code-background
   @extend %codeHighlight
 
 .codeR
-  background-color: rgba(255, 0, 0, .1)
+  background-color: $r-background
   @extend %codeHighlight
 
 .codeG
-  background-color: rgba(0, 250, 0, .1)
+  background-color: $g-background
   @extend %codeHighlight
 
 .codeB
-  background-color: rgba(0, 0, 250, .1)
+  background-color: $b-background
   @extend %codeHighlight
 
 .textR
-  background-color: rgba(255, 0, 0, .1)
+  background-color: $r-background
   @extend %textHighlight
 
 .textG
-  background-color: rgba(0, 250, 0, .1)
+  background-color: $g-background
   @extend %textHighlight
 
 .textB
-  background-color: rgba(0, 0, 250, .1)
+  background-color: $b-background
   @extend %textHighlight
 
-
 .prettifyHTML
-  color: #ed5565
+  color: $HTML-Text
   background-color: $pretty-background
 
 .prettifyCOM
-  color: #90EE90
+  color: $COM-Text
   background-color: $pretty-background
 
 .prettifySQL
-  color: #f0ff76
+  color: $SQL-Text
   background-color: $pretty-background
 
 .prettifyCSS
-  color: #90EE90
+  color: $CSS-Text
   background-color: $pretty-background
 
 .prettifyJS
-  color: #4fc1e9
+  color: $JS-Text
   background-color: $pretty-background
 
 .prettifyPHP
-  color: #ac92ec
+  color: $PHP-Text
   background-color: $pretty-background
 
 .prettifyResult
+  color: $Res-Text
   background-color: $pretty-background
-  color: #e6e9ed
-
-.prettifyPurple
-  background-color: $pretty-background
-  color: #ac92ec
 
 .face
-  color: #f0ff76
+  color: $face-Text
   background-color: $pretty-background
   border-radius: 3px
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace
