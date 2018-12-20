@@ -24,32 +24,24 @@
 
 <body>
 
-  <!-- START NAVBAR -->
   <div class="navFixed">
     <div class="navWrapper">
       <a href="https://portal.mycodecentral.com/my/" target="_self"><img src="img/logo.png" alt="Code Central"></a>
     </div>
   </div>
-  <!-- END NAVBAR -->
 
-  <!-- START PAGE -->
   <div class="contentWrapper">
 
-    <!-- START TOC -->
     <div id="tocHook">CCC</div>
-    <!-- END TOC -->
 
-    <!-- START CONTENT -->
     <div id="top" class="articalContent">
 
-      <!-- START HEADER -->
       <div>
         <h1>CCC Library</h1>
       </div>
-      <!-- END HEADER -->
 
-      <!-- START TEXT -->
       <div id="tocContent">
+
         <p>
           The Code Central Curriculum (CCC) library provides helpful CSS stylings
           and easy to use JS functionality to help insturctors create new curriculum.
@@ -62,20 +54,16 @@
           This is a great opportunity for you to improve your <span class="code prettifyCOM"> HTML/CSS/JS</span> skills
           and <b>contribute to an open source project</b>.
         </p>
-
         <a class="button" href="https://github.com/mm909/CCC">Contribute</a>
 
-        <!-- START SECTION -->
         <section id="_QS">
-          <!-- SECTION TITLE LINK -->
           <a id="QS">
             <h1>Quickstart</h1>
           </a>
-
-          The following section has links to example templates you can use that
-          already have most of the setup done for you.
-          <br>
-          <br>
+          <p>
+            The following section has links to example templates you can use that
+            already have most of the setup done for you.
+          </p>
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="cardHover card">
@@ -98,7 +86,6 @@
               </div>
             </div>
           </div>
-
         </section>
 
         <section id="_D">
@@ -124,20 +111,85 @@
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mm909/CCC@master/css/CCC.css">
 &lt;!-- END CCC IMPORTS --></pre>
           </div>
-
         </section>
 
         <section id="_TOCDoc">
           <a id="TOCDoc">
             <h1>Table of Contents</h1>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a id="0TOCSTART">
+            <h2> <span class="code prettifyJS">Setup</span></h2>
+          </a>
+          <!-- <div id="tocHook">CCC</div> -->
+          <p>
+            <span class="code prettifyCOM">CCC.js</span> runs a script that automatically creates a table of contents so you don't have to!
+          </p>
+          <p>
+            There are two html elements that CCC.js looks for.
+            <ul>
+              <li>tocHook</li>
+              <li>tocContent</li>
+            </ul>
+            CCC will 'hook' onto tocHook and start building a TOC there with the sections and subsections it finds in tocContent.
+          </p>
+          <p>
+            <b>This setup is VERY important!</b><br>
+            The JS and CSS are very dumb and will work if it is not setup exactly as it is below.
+          </p>
+          <div class='codeBox'>
+            <a class="noselect button copyButton" onclick="copyOnClick('tocSetup',event)" href="">Copy text</a>
+            <pre class="prettyprint linenums lang-php" id="tocSetup">
+&lt;!-- Header and imports above -->
+&lt;div class="contentWrapper">
+  &lt;div id="tocHook">CCC&lt;/div> &lt;!-- tocHook w/ title "CCC" -->
+  &lt;div id="top" class="articalContent">
+    &lt;div id="tocContent"> &lt;!-- tocContent w/ sections and subsection -->
+
+      &lt;!-- CONTENT -->
+      
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+          </div>
+          <a id="0TOCTITLE">
+            <h2> <span class="code prettifyJS">Title</span></h2>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a id="0TOCSECTION">
+            <h2> <span class="code prettifyJS">Section</span></h2>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a id="0TOCSUBSECTION">
+            <h2> <span class="code prettifyJS">Subsection</span></h2>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a id="0TOCJS">
+            <h2> <span class="code prettifyJS">The JS</span></h2>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a id="0TOCCUSTOMIZATIONS">
+            <h2> <span class="code prettifyJS">Customizations</span></h2>
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </section>
 
-        <!-- START SECTION -->
         <section id="_C">
-          <!-- SECTION TITLE LINK -->
           <a id="C">
             <h1>Components</h1>
           </a>
@@ -158,7 +210,8 @@
             <a style="display:inline" href="https://github.com/mm909/CCC/blob/master/sass/components/text.sass" class="button">text.sass</a>
           </div>
           <div class="paraSection">
-            <div class="para paraCenter">
+            <div class="paraCenter">
+              <h3>Text Highlight</h3>
               <span class="textR">textR</span>
               <span class="textG">textG</span>
               <span class="textB">textB</span>
@@ -173,8 +226,8 @@
   </pre>
               </div>
             </div>
-            <hr>
-            <div class="para paraCenter">
+            <div class="paraCenter">
+              <h3>Code Highlight</h3>
               <span class="code">code</span>
               <span class="codeR">codeR</span>
               <span class="codeG">codeG</span>
@@ -190,10 +243,9 @@
 &lt;span class="codeB">codeB&lt;/span>
                 </pre>
               </div>
-
             </div>
-            <hr>
-            <div class="para paraCenter">
+            <div class="paraCenter">
+              <h3>Prettify Text</h3>
               <span class="prettifyHTML">prettifyHTML</span>
               <span class="prettifyCOM">prettifyCOM</span>
               <span class="prettifySQL">prettifySQL</span>
@@ -235,17 +287,65 @@
                 </pre>
               </div>
             </div>
+            <div class="paraCenter">
+              <h3>Customizations</h3>
+              <style media="screen">
+                .textC {
+                  border-radius: 3px;
+                  color: inherit;
+                  margin: 0;
+                  padding: 3.2px 6.4px;
+                  background-color: rgba(0, 255, 255, 0.4)
+                }
+
+                .codeY {
+                  border-radius: 3px;
+                  color: inherit;
+                  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+                  font-size: 85%;
+                  margin: 0;
+                  padding: 3.2px 6.4px;
+                  background-color: rgba(255, 255, 0, 0.4);
+                }
+
+                .prettifyRand {
+                  color: #00cccc;
+                  background-color: rgba(255, 255, 0, 0.4);
+                }
+              </style>
+              <span class="textC">textC</span>
+              <span class="codeY">codeY</span>
+              <span class="code prettifyRand">prettifyRand</span>
+              <br>
+              <br>
+              <div class="codeBox">
+                <a class="noselect button copyButton" onclick="copyOnClick('customizationsText',event)" href="">Copy text</a>
+                <pre class="paraLeft prettyprint linenums lang-css" id="customizationsText">
+.textC {
+  border-radius: 3px;
+  color: inherit;
+  margin: 0;
+  padding: 3.2px 6.4px;
+  background-color: rgba(0, 255, 255, 0.4)
+}
+
+.codeY {
+  border-radius: 3px;
+  color: inherit;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-size: 85%;
+  margin: 0;
+  padding: 3.2px 6.4px;
+  background-color: rgba(255, 255, 0, 0.4);
+}
+
+.prettifyRand {
+  color: #00cccc;
+  background-color: rgba(255, 255, 0, 0.4);
+}</pre>
+              </div>
+            </div>
           </div>
-
-          <!-- SUBSECTION LINK -->
-          <a id="0second">
-            <h2><span class="code prettifyPHP">Lorem ipsum</span></h2>
-          </a>
-
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
 
         </section>
         <!-- END SECTION -->

@@ -1,10 +1,12 @@
 // Mikian: Start         -
 // Mikian: End           -
+// Mikian: Goal          -
 // Mikian: Comment       -
 // Mikian: GitHub Commit -
 
 // Victor: Start         -
 // Victor: End           -
+// Victor: Goal          -
 // Victor: Comment       -
 // Victor: GitHub Commit -
 
@@ -42,3 +44,9 @@
 // Mikian: End           - 12/20/2018 12:40PM
 // Mikian: Comment       - 9a6cd2a
 // Mikian: GitHub Commit - Finished migration to SASS started doc process
+
+// Mikian: Start         - 12/20/2018 1:10AM
+// Mikian: End           -
+// Mikian: Goal          - Work on TOC documentation
+// Mikian: Comment       -
+// Mikian: GitHub Commit -

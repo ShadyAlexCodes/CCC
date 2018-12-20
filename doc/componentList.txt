@@ -1,5 +1,9 @@
 [✔️] text.sass
   [✔️] Create Documentation
+    [✔️] Show examples
+    [✔️] Show example code
+    [✔️] Provide copy link
+    [✔️] Show customizations
   [✔️] Create Classes
     [✔️] Text Highlight
       [✔️] .textR
@@ -22,6 +26,24 @@
 
 [__] toc.sass
   [__] Create Documentation
+    [✔️] TOC setup
+    [__] How to make a title
+    [__] How to make a section
+      [__] Keywords
+      [__] Example usage
+      [__] Styling
+    [__] How to make a subsection
+      [__] Keywords
+      [__] Example usage
+      [__] Styling
+    [__] Link to the JS
+    [__] Show customizations
+  [✔️] Create Classes
+    [✔️] .navTitle
+    [✔️] .toc
+    [✔️] .navSection
+
+
 
 [__] para.sass
   [__] Create Documentation
