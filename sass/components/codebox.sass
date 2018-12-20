@@ -2,10 +2,16 @@
   font-size: 20px
 
 .codeBox
-  margin: auto
   width: 100%
-  font-size: 115%
-  max-width: 900px
+  @extend %codeBox
+
+.codeBox50
+  width: 50%
+  @extend %codeBox
+
+.codeBox75
+  width: 75%
+  @extend %codeBox
 
 .tab-content
   max-width: 900px

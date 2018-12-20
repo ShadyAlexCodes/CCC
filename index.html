@@ -14,10 +14,10 @@
   <!-- END LIBRARY IMPORTS -->
 
   <!-- START LOCAL IMPORTS -->
-  <!-- <script type="text/javascript" src="js/CCC.js"></script> -->
-  <script type="text/javascript" src="https://gitcdn.link/repo/mm909/CCC/master/js/CCC.js"></script>
-  <link rel="stylesheet" href="https://gitcdn.link/repo/mm909/CCC/master/css/CCC.css">
-  <!-- <link rel="stylesheet" href="css/CCC.css"> -->
+  <script type="text/javascript" src="js/CCC.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mm909/CCC@master/js/CCC.js"></script> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mm909/CCC@master/css/CCC.css"> -->
+  <link rel="stylesheet" href="css/CCC.css">
   <!-- END LOCAL IMPORTS -->
 
 </head>
@@ -102,13 +102,13 @@
         </section>
 
         <section id="_D">
-          <p class="right-button button" onclick="copyOnClick('imports')">Copy text</p>
           <a id="D">
             <h1>Dependencies</h1>
           </a>
 
-          <p>Please import the following libraries - </p>
+          <p>Import the following libraries - </p>
           <div class='codeBox'>
+            <a class="noselect button copyButton" onclick="copyOnClick('imports',event)" href="">Copy text</a>
             <pre class="prettyprint linenums lang-php" id="imports">
 &lt;!-- START LIBRARY IMPORTS -->
 &lt;script src="https://code.jquery.com/jquery-3.3.1.js">&lt;/script> <!-- jQuery 3.3.1 -->
@@ -120,72 +120,121 @@
 &lt;!-- END LIBRARY IMPORTS -->
 
 &lt;!-- START CCC IMPORTS -->
-&lt;script type="text/javascript" src="https://gitcdn.link/repo/mm909/CCC/master/js/CCC.js">&lt;/script>
-&lt;link rel="stylesheet" href="https://gitcdn.link/repo/mm909/CCC/master/css/CCC.css">
+&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mm909/CCC@master/js/CCC.js">&lt;/script>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mm909/CCC@master/css/CCC.css">
 &lt;!-- END CCC IMPORTS --></pre>
           </div>
 
         </section>
 
+        <section id="_TOCDoc">
+          <a id="TOCDoc">
+            <h1>Table of Contents</h1>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
         <!-- START SECTION -->
-        <section id="_QsS">
+        <section id="_C">
           <!-- SECTION TITLE LINK -->
-          <a id="QsS">
-            <h1>Quickstart</h1>
+          <a id="C">
+            <h1>Components</h1>
           </a>
 
-          The following section has links to example templates you can use that
-          already have most of the setup done for you.
+          <p>
+            For larger components please see the <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/">Bootstrap 4 documentation</a>
+            <br>This library builds off of Bootstrap's components
+          </p>
 
           <!-- SUBSECTION LINK -->
-          <a id="0first">
-            <h2> <span class="code prettifyCSS">Subsection 1</span></h2>
+          <a id="0textsass">
+            <h2> <span class="code prettifyJS">Text</span></h2>
           </a>
 
           <!-- START PARA SECTION -->
-          <p class="paraTitle">Lorem Ipsum</p>
+          <div class="paraHeader">
+            <p class="paraTitle" style="display:inline">Text Styles </p>
+            <a style="display:inline" href="https://github.com/mm909/CCC/blob/master/sass/components/text.sass" class="button">text.sass</a>
+          </div>
           <div class="paraSection">
-
-            <!-- EXAMPLE PARA W/ FL AND FR AND CENTER -->
             <div class="para paraCenter">
-              <div class="fl">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <div class="fr">
-                <div class="paraImage">
-                  <img src="https://picsum.photos/1000/?image=1073"></img>
-                </div>
-              </div>
-            </div>
-            <!-- EXAMPLE PARA W/ FL AND FR AND CENTER -->
-
-            <div class="para">
-              <div class="fl">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <div class="fr">
-                <div class="paraImage">
-                  <img src="https://picsum.photos/1000/?random"></img>
-                </div>
+              <span class="textR">textR</span>
+              <span class="textG">textG</span>
+              <span class="textB">textB</span>
+              <br>
+              <br>
+              <div class="codeBox50">
+                <a class="noselect button copyButton" onclick="copyOnClick('textExample',event)" href="">Copy text</a>
+                <pre class=" paraLeft prettyprint linenums lang-html" id="textExample">
+&lt;span class="textR">textR&lt;/span>
+&lt;span class="textG">textG&lt;/span>
+&lt;span class="textB">textB&lt;/span>
+  </pre>
               </div>
             </div>
+            <hr>
+            <div class="para paraCenter">
+              <span class="code">code</span>
+              <span class="codeR">codeR</span>
+              <span class="codeG">codeG</span>
+              <span class="codeB">codeB</span>
+              <br>
+              <br>
+              <div class="codeBox50">
+                <a class="noselect button copyButton" onclick="copyOnClick('codeExample',event)" href="">Copy text</a>
+                <pre class="paraLeft prettyprint linenums lang-html" id="codeExample">
+&lt;span class="code">code&lt;/span>
+&lt;span class="codeR">codeR&lt;/span>
+&lt;span class="codeG">codeG&lt;/span>
+&lt;span class="codeB">codeB&lt;/span>
+                </pre>
+              </div>
 
-            <div class="para">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-              <div class="paraImage">
-                <img src="https://picsum.photos/1000/?random"></img>
+            </div>
+            <hr>
+            <div class="para paraCenter">
+              <span class="prettifyHTML">prettifyHTML</span>
+              <span class="prettifyCOM">prettifyCOM</span>
+              <span class="prettifySQL">prettifySQL</span>
+              <span class="prettifyCSS">prettifyCSS</span>
+              <span class="prettifyJS">prettifyJS</span>
+              <span class="prettifyPHP">prettifyPHP</span>
+              <br>
+              <span class="code prettifyHTML">prettifyHTML</span>
+              <span class="code prettifyCOM">prettifyCOM</span>
+              <span class="code prettifySQL">prettifySQL</span>
+              <span class="code prettifyCSS">prettifyCSS</span>
+              <span class="code prettifyJS">prettifyJS</span>
+              <span class="code prettifyPHP">prettifyPHP</span>
+              <span class="code prettifyResult">prettifyResult</span>
+              <span class="code face">face</span>
+              <br>
+              <br>
+              <div class="codeBox75">
+                <a class="noselect button copyButton" onclick="copyOnClick('prettifyExample',event)" href="">Copy text</a>
+                <pre class="paraLeft prettyprint linenums lang-html" id="prettifyExample">
+&lt;!-- Top Row -->
+&lt;span class="prettifyHTML">prettifyHTML&lt;/span>
+&lt;span class="prettifyCOM">prettifyCOM&lt;/span>
+&lt;span class="prettifySQL">prettifySQL&lt;/span>
+&lt;span class="prettifyCSS">prettifyCSS&lt;/span>
+&lt;span class="prettifyJS">prettifyJS&lt;/span>
+&lt;span class="prettifyPHP">prettifyPHP&lt;/span>
+&lt;span class="prettifyResult">prettifyResult&lt;/span>
+
+&lt;!-- Bottom Row -->
+&lt;span class="code prettifyHTML">prettifyHTML&lt;/span>
+&lt;span class="code prettifyCOM">prettifyCOM&lt;/span>
+&lt;span class="code prettifySQL">prettifySQL&lt;/span>
+&lt;span class="code prettifyCSS">prettifyCSS&lt;/span>
+&lt;span class="code prettifyJS">prettifyJS&lt;/span>
+&lt;span class="code prettifyPHP">prettifyPHP&lt;/span>
+&lt;span class="code prettifyResult">prettifyResult&lt;/span>
+&lt;span class="code face">face&lt;/span>
+                </pre>
               </div>
             </div>
-
           </div>
 
           <!-- SUBSECTION LINK -->
@@ -193,10 +242,6 @@
             <h2><span class="code prettifyPHP">Lorem ipsum</span></h2>
           </a>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -359,16 +404,6 @@ for(var i = 0; i < 42; i++){
             aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
 
-          <span class="code">code</span>
-          <span class="codeR">codeR</span>
-          <span class="codeG">codeG</span>
-          <span class="codeB">codeB</span>
-          <br>
-          <br>
-
-          <span class="textR">textR</span>
-          <span class="textG">textG</span>
-          <span class="textB">textB</span>
         </section>
         <!-- END SECTION -->
 

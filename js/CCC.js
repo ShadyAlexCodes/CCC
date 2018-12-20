@@ -251,7 +251,8 @@ function a(element) {
   $temp.remove();
 }
 
-function copyOnClick(element_id) {
+function copyOnClick(element_id, e) {
+  e.preventDefault();
   var aux = document.createElement("div");
   aux.setAttribute("contentEditable", true);
   aux.innerHTML = document.getElementById(element_id).innerHTML;
