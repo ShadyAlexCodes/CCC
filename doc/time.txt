@@ -46,7 +46,7 @@
 // Mikian: GitHub Commit - Finished migration to SASS started doc process
 
 // Mikian: Start         - 12/20/2018 1:10AM
-// Mikian: End           -
+// Mikian: End           - 12/20/2018 2:05AM
 // Mikian: Goal          - Work on TOC documentation
-// Mikian: Comment       -
-// Mikian: GitHub Commit -
+// Mikian: Comment       - Added to Button doc and started on TOC doc
+// Mikian: GitHub Commit - f03465b
